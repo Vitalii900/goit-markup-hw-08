@@ -1,0 +1,35 @@
+.advantage-list {
+  display: flex;
+  column-gap: 30px;
+
+  &__item {
+    width: calc((100% - 90px) / 4);
+
+    border-radius: 4px;
+  }
+
+  &__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  }
+
+  &__text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $secondery-text-color;
+  }
+}
+
+.picture-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  height: 120px;
+  background-color: $team-background-color;
+}

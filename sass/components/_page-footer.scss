@@ -1,0 +1,44 @@
+.address-box {
+  margin-right: 70px;
+}
+
+.footer {
+  height: 252px;
+  background-color: $footer-background-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__container {
+    display: flex;
+  }
+
+  &__logo {
+    color: $text-hero;
+    font-family: 'raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+  }
+}
+
+.address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin-top: 20px;
+
+  &__city {
+    color: $text-hero;
+    margin-bottom: 9px;
+  }
+
+  &__mail {
+    margin-bottom: 9px;
+  }
+}
+
+.footer-contacts {
+  color: rgba(255, 255, 255, 0.6);
+}
