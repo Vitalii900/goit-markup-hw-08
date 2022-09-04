@@ -1,15 +1,16 @@
 .address-box {
-  margin-right: 70px;
+  // margin-right: 70px;
+  
 }
 
 .footer {
-  height: 252px;
+  // height: 252px;
   background-color: $footer-background-color;
   padding-top: 60px;
   padding-bottom: 60px;
 
   &__container {
-    display: flex;
+    // display: flex;
   }
 
   &__logo {
@@ -42,3 +43,189 @@
 .footer-contacts {
   color: rgba(255, 255, 255, 0.6);
 }
+
+/* Иконки соцсетей футера */
+
+.footer-social {
+
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-top: 12px;
+    margin-bottom: 0;
+    column-gap: 10px;
+  }
+
+  &__icon {
+    fill: $text-hero;
+  }
+}
+
+.join {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $text-hero;
+}
+
+.footer-social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $active-text-color;
+  }
+}
+
+/* Форма для подписки в футере */
+
+.subscribe {
+  // margin-left: auto;
+  // margin-top: 12px;
+
+  &__box {
+    margin-top: 20px;
+    // display: flex;
+    // margin-top: 20px;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    max-width: 200px;
+    padding: 10px 28px 10px 31px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: transparent;
+
+    color: $text-hero;
+    background-color: $active-text-color;
+
+    cursor: pointer;
+  }
+
+  &__text {
+    margin-right: 10px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+  }
+}
+
+.form {
+  // margin-right: 12px;
+
+  &__input {
+    display: block;
+
+    height: 50px;
+    width: 100%;
+    padding: 15px;
+
+    color: $main-background-color;
+
+    background-color: $footer-background-color;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-social {
+    margin-bottom: 60px;
+  }
+
+  .address-box {
+    margin-bottom: 60px;
+  }
+  }
+
+  @media screen and(min-width: 768px) {
+    .form__input {
+      width: 450px;
+    }
+
+    .flex-tablet {
+      display: flex;
+      justify-content: space-evenly;
+      margin-bottom: 60px;
+    }
+
+    .footer-social {
+      margin-top: 5px;
+    }
+  }
+
+  @media screen and(max-width: 1199px) {
+    .form__input {
+      margin-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .subscribe {
+      text-align: center;
+    }
+
+    .subscribe__button {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .footer-social {
+      text-align: center;
+    }
+
+    .address-box {
+      text-align: center;
+    }
+  }
+
+  @media screen and(min-width: 1200px) {
+    .form__input {
+      width: 358px;
+      margin-right: 12px;
+    }
+
+    .footer-social {
+      margin-top: 12px;
+    }
+
+    .address-box {
+      margin-right: 70px;
+    }
+
+    .footer__container {
+      display: flex;
+    }
+
+    .subscribe {
+      margin-left: auto;
+    }
+
+    .subscribe__box {
+      display: flex;
+    }
+
+    .flex-tablet {
+      margin: 0;
+    }
+  }
